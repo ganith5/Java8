@@ -7,7 +7,7 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {4, 5, 6, 2, 1, 7, 10, 3, 8 ,9};
         int[] sortedArr = bubbleSort(arr);
-        print(sortedArr);
+        Utility.print(sortedArr);
     }
 
     private static int[] bubbleSort(int[] arr) {
@@ -32,10 +32,4 @@ public class BubbleSort {
         return arr;
     }
 
-    private static void print(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + ((i == n - 1) ? "" : " "));
-        }
-    }
 }

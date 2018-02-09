@@ -1,4 +1,4 @@
-package com.java8.hackerrank;
+package com.java8.interviews.parker;
 
 /**
  * Created by Pavithra Sachidananda on 12/2/17.

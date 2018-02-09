@@ -1,11 +1,5 @@
 package com.java8.interviews;
 
-import java.util.*;
-import java.util.stream.Collectors;
-
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.toSet;
-
 /**
  * Created by Pavithra Sachidananda on 11/20/17.
  */
@@ -14,7 +8,6 @@ public class OddNumberOfTimes {
     public static void main(String[] args) {
         int[] numbers = {2,3, 4, 3, 1, 4, 5, 1, 4, 2, 5};
         //List<Integer> numbers = Arrays.asList(2, 3, 4, 3, 1, 4, 5, 1, 4, 2, 5);
-        Map<Integer, Integer> numberMap = new HashMap<>();
 
         printNumberOccuringOddNumberOfTimes(numbers);
 

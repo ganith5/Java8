@@ -6,7 +6,7 @@ package com.java8.concurrency;
  * So why do we use Join ?
  * To see to it that we wait for the current thread to finish execution before the next thread picks up
  */
-public class InterruptedSignalTest {
+public class JoinTest {
 
     public static void main(String[] args) {
 

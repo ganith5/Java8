@@ -3,7 +3,7 @@ package com.java8.concurrency.synchronization;
 /**
  * Created by Pavithra Sachidananda on 11/26/17.
  */
-public class SynchronizedCounter {
+public class SynchronizedCounterTest {
 
     private int c = 0;
 

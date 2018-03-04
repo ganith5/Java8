@@ -18,6 +18,7 @@ public class MainThread {
             worker.setName(String.valueOf(i));
             // Start the thread, never call method run() direct
             worker.start();
+            worker.start();
             // Remember the thread for later usage
             threads.add(worker);
         }

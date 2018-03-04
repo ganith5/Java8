@@ -22,6 +22,12 @@ public class DeveloperTest {
 
         Collections.sort(developerList, ( d1,  d2) -> d1.getAge() - d2.getAge());
 
+        int i = Collections
+                .binarySearch(
+                        developerList,
+                        new Developer("Arin", 19), (d1, d2) -> d2.getName().compareTo(d1.getName()));
+        System.out.println(i);
+
         System.out.println("Age: " + developerList);
 
 
@@ -31,7 +37,7 @@ public class DeveloperTest {
 
     public static List<Developer> createDeveloperList() {
         List<Developer> developerList = new ArrayList<>();
-        developerList.add(new Developer("Arin", 30));
+        developerList.add(new Developer("Arin", 19));
         developerList.add(new Developer("Zara", 29));
         developerList.add(new Developer("Jcrew", 20));
         developerList.add(new Developer("Jack", 42));

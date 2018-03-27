@@ -42,6 +42,9 @@ public class BiPredicateTest {
         System.out.println("Odd numbers list : " + filter(source, oddPredicate));
 
 
+
+
+
     }
 
     public static <T> List<Integer> filter(List<Integer> source, Predicate<Integer> predicate) {

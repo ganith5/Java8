@@ -1,7 +1,5 @@
 package com.java8.interviews.queues;
 
-import com.java8.interviews.stacks.StackOverFlowException;
-
 import java.lang.reflect.Array;
 
 /**
@@ -9,7 +7,7 @@ import java.lang.reflect.Array;
  */
 public class Queue<T> {
 
-    private static final int MAX_SIZE = 5;
+    private static final int MAX_SIZE = 50;
     private T[] elements;
 
     private static final int NEGATIVE_INDEX = -1;

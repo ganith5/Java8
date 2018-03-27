@@ -25,15 +25,15 @@ public class FileCreator {
 	private static void writeInMemory(String location) {
 		
 		int numberOfChunks = (int)(FILE_SIZE/CHUNK_SIZE);
-		Path newFile = FileSystems.getDefault().getPath(location);
+		Path filePath = FileSystems.getDefault().getPath(location);
 		for(int i=0; i<numberOfChunks; i++) {
-			System.out.println("file size = " + newFile.toFile().length());
+			System.out.println("file size = " + filePath.toFile().length());
 			StringBuilder builder = new StringBuilder();
 			while(builder.length() <= CHUNK_SIZE) {
 				builder.append(CONTENTS);
 			}
-			try(BufferedWriter writer = Files.newBufferedWriter(newFile, StandardOpenOption.APPEND)){
-				System.out.println(newFile.toFile().length() + " ready to write chunk " + i);
+			try(BufferedWriter writer = Files.newBufferedWriter(filePath, StandardOpenOption.APPEND)){
+				System.out.println(filePath.toFile().length() + " ready to write chunk " + i);
 				writer.write(builder.toString());
 				writer.flush();
 				
@@ -50,7 +50,7 @@ public class FileCreator {
 		
 		try(BufferedWriter writer = Files.newBufferedWriter(newFile)){
 			while(newFile.toFile().length() < FILE_SIZE) {
-				writer.write("101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010");
+				writer.write(CONTENTS);
 				writer.flush();
 			}
 		}catch(IOException ioe) {

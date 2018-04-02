@@ -38,7 +38,6 @@ public class LinkedList<T>
 
 
     }
-
     //O(1)
     public T pop() {
         if(head == null){

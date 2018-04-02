@@ -37,7 +37,7 @@ public class FlatmapTest {
 
 class Foo {
     String name;
-    List<Bar> bars = new ArrayList();
+    List<Bar> bars = new ArrayList<Bar>();
 
     Foo(String name) {
         this.name = name;

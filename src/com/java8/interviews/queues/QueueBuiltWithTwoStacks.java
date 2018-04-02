@@ -32,6 +32,10 @@ public class QueueBuiltWithTwoStacks<T> {
 
         }
     }
+    
+    public boolean isEmpty() {
+    	return reverseStack.isEmpty() && forwardStack.isEmpty();
+    }
 
     public T dequeue() {
 
